@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transitions With Blocks</title>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+
+				/*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+
+	(function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+
+				grunticon(["grunticon/icons.data.svg.css", "grunticon/icons.data.png.css", "grunticon/icons.fallback.css"]);
+			</script>
+			<noscript><link href="icons.fallback.css" rel="stylesheet"></noscript>
+</head>
+<body>
+
+
+
+<h1>The Week In Weather</h1>
+
+		<div id="week">
+
+			<div class="day icon-sun">
+				<span class="day-name">Monday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">08</span>
+				<span class="day-weather">Sunny</span>
+				<span class="day-icon"></span>
+				<span class="day-high">24</span>
+				<span class="day-low">2</span>
+				<span class="day-summary">Sunny all day. Evening winds.</span>
+			</div>
+
+
+			<div class="day icon-cloudy">
+				<span class="day-name">Tuesday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">09</span>
+				<span class="day-weather">Cloudy</span>
+				<span class="day-icon"></span>
+				<span class="day-high">29</span>
+				<span class="day-low">2</span>
+				<span class="day-summary">Increasing cloud.</span>
+			</div>
+
+			<div class="day icon-lightning">
+				<span class="day-name">Wednesday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">10</span>
+				<span class="day-weather">Lightning</span>
+				<span class="day-icon"></span>
+				<span class="day-high">24</span>
+				<span class="day-low">8</span>
+				<span class="day-summary">Violent storms. Thunder, lightning.</span>
+			</div>
+
+
+			<div class="day icon-rainy">
+				<span class="day-name">Thursday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">11</span>
+				<span class="day-weather">Rainy</span>
+				<span class="day-icon"></span>
+				<span class="day-high">16</span>
+				<span class="day-low">5</span>
+				<span class="day-summary">Sunny all day. Evening winds.</span>
+			</div>
+
+
+			<div class="day icon-snowy">
+				<span class="day-name">Friday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">12</span>
+				<span class="day-weather">Snow</span>
+				<span class="day-icon"></span>
+				<span class="day-high">22</span>
+				<span class="day-low">8</span>
+				<span class="day-summary">Blizzards, high winds.</span>
+			</div>
+
+
+			<div class="day icon-sleet">
+				<span class="day-name">Saturday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">13</span>
+				<span class="day-weather">Sleet</span>
+				<span class="day-icon"></span>
+				<span class="day-high">24</span>
+				<span class="day-low">11</span>
+				<span class="day-summary">Not a picnic day.</span>
+			</div>
+
+
+			<div class="day icon-nuclear-winter">
+				<span class="day-name">Sunday</span>
+				<span class="day-month">July</span>
+				<span class="day-number">14</span>
+				<span class="day-weather alert">Nuclear Winter</span>
+				<span class="day-icon"></span>
+				<span class="day-high">50000</span>
+				<span class="day-low">-175</span>
+				<span class="day-summary">No human life remains.</span>
+			</div>
+
+
+
+		</div>   <!-- end .WEEK -->
+
+
+
+<footer>
+	<small>Nuclear Weather Inc, 2015 </small>
+</footer>
+
+
+
+</body>
+</html>

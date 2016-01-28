@@ -1,0 +1,55 @@
+
+.icon-fahrenheit {
+	background-image: url('png/fahrenheit.png');
+	background-repeat: no-repeat;
+}
+
+.icon-celsius {
+	background-image: url('png/celsius.png');
+	background-repeat: no-repeat;
+}
+
+.icon-cloud {
+	background-image: url('png/cloud.png');
+	background-repeat: no-repeat;
+}
+
+.icon-cloudy {
+	background-image: url('png/cloudy.png');
+	background-repeat: no-repeat;
+}
+
+.icon-lightning {
+	background-image: url('png/lightning.png');
+	background-repeat: no-repeat;
+}
+
+.icon-none {
+	background-image: url('png/none.png');
+	background-repeat: no-repeat;
+}
+
+.icon-nuclear-winter {
+	background-image: url('png/nuclear-winter.png');
+	background-repeat: no-repeat;
+}
+
+.icon-rainy {
+	background-image: url('png/rainy.png');
+	background-repeat: no-repeat;
+}
+
+.icon-sleet {
+	background-image: url('png/sleet.png');
+	background-repeat: no-repeat;
+}
+
+.icon-snowy {
+	background-image: url('png/snowy.png');
+	background-repeat: no-repeat;
+}
+
+.icon-sun {
+	background-image: url('png/sun.png');
+	background-repeat: no-repeat;
+}
