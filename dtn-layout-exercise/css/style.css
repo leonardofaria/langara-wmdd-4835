@@ -1,0 +1,256 @@
+@import "grid.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Fjalla+One|Merriweather:400,400italic);
+
+* {
+	transition:	all	0.1s ease;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto 0;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header {
+	background: #000;
+	height: 160px;
+	margin-bottom: 15px;
+}
+
+header h1 {
+	color: #707B7F;
+	display: inline-block;
+	float: left;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 7rem;
+	line-height: 160px;
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+
+header ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	display: inline-block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+header li a {
+	color: #fff;
+	display: block;
+	font-family: 'Merriweather', serif;
+	line-height: 160px;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+header li a:hover {
+	background: #707B7F;
+}
+
+section h2 {
+	font-family: 'Merriweather', serif;
+	height: 15px;
+	border-bottom: 1px solid #707B7F;
+	margin: 40px 0;
+	position: relative;
+}
+
+section h2 span {
+	background: #fff;
+	padding-right: 10px;
+	position: absolute;
+}
+
+section h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+}
+
+section p {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+}
+
+section .byline {
+	font-family: 'Merriweather', serif;
+	font-size: 400;
+	font-style: italic;
+}
+
+/* ==========================================================================
+   EXCLUSIVE - FIRST SECTION
+   ========================================================================== */
+
+section:first-of-type {
+	background: #000;
+	clear: both;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+section:first-of-type h2 {
+	margin-top: 10px;
+	text-align: left;
+}
+
+section:first-of-type h2 span {
+	background: #000;
+}
+
+section:first-of-type p {
+	max-width: 575px;
+	margin: 10px auto 10px;
+}
+
+/* ==========================================================================
+   NEW THIS MONTH - THIRD SECTION
+   ========================================================================== */
+
+.new .row:first-of-type, .gallery .row {
+	margin-bottom: 20px;
+}
+
+.new .col-4 {
+	position: relative;
+}
+
+.new .col-4 .category {
+	background: rgba(255, 255, 255, 0.7);
+	font-family: 'Merriweather', serif;
+	padding: 5px 0;
+	position: absolute;
+	text-align: center;
+	left: 0;
+	top: 0;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+
+@media (max-width: 767px) {
+
+	header {
+		height: auto;
+	}
+
+	header h1 {
+		display: block;
+		float: initial;
+		margin: 0;
+		text-align: center;
+	}
+
+	header ul {
+		background: #fff;
+		clear: both;
+		float: none;
+	}
+
+	header li {
+		width: 50%;
+	}
+
+	header li a {
+		color: #000;
+    line-height: 100%;
+    padding: 10px 0;
+    text-align: center;
+	}
+
+	section h2 {
+		text-align: center;
+	}
+
+	section h2 span {
+		padding-left: 10px;
+		position: relative;
+	}
+
+	section:first-of-type {
+		padding: 10px 0;
+	}
+
+	section:first-of-type h2 {
+		text-align: center;
+	}
+
+	section:first-of-type p {
+		margin: 10px 5%;
+		max-width: auto;
+	}
+
+	section h2 {
+		margin: 40px 20px;
+	}
+
+	section h3, section p, section .byline {
+		margin: 1em 20px;
+	}
+
+	.new .row:first-of-type, .gallery .row {
+		margin-bottom: 0;
+	}
+
+	.gallery .row {
+	  margin-right: -1.5%;
+	  margin-left: -1.5%;
+	}
+
+	.gallery [class^="col-"], .gallery [class*=" col-"]{
+	  position: relative;
+	  float: left;
+	  padding-right: 1.5%;
+	  padding-left: 1.5%;
+	  min-height: 1px;
+	  width: 100%;
+	}
+
+	.gallery .col-4  { width: 33.333%; }
+}

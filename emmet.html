@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>Emmet</title>
+</head>
+<body>
+
+	<b>Make a list menu with 12 links ("#"), with link text that increments by one with each link. For example link01, link02, link03.</b>
+
+	<pre>
+		ul>li*12>a{link$$}
+
+		ul>(li>a[href="#"]{link$$})*12
+	</pre>
+
+	<hr/>
+
+	<b>Make a list menu with with 12 links, but "prewired" with spans and classes for Font Awesome.</b>
+
+	<pre>
+		ul>li*12>a>span.fa.fa-+{link$$}
+
+		ul>(li>a[href="#"]>span.fa.fa-+{link$$})*12
+	</pre>
+
+	<hr/>
+
+	<b>Make a list menu with with 12 links, but "prewired" with spans and classes for Font Awesome and with the visuallyhidden class.</b>
+
+	<pre>
+		ul>li*12>a>span.fa.fa-+span.visuallyhidden+{link$$}
+
+		ul>(li>a[href="#"]>span.fa.fa-+span.visuallyhidden>{link$$})*12
+	</pre>
+
+	<hr/>
+
+	<b>Make three rows of DIVs with classes of clearfix and row. Each row will have 4 articles inside. Each article will have an h1 with 3 words of lorem ipsum, an h2 with 2 words of lorem ipsum, and a p with 17 words of lorem ipsum.</b>
+
+	<pre>
+		(div.clearfix.row.row$>(article>h1>lorem3^h2>lorem2^p>lorem17)*3)*4
+	</pre>
+
+	<hr/>
+
+	<b>Make a table with <br/>
+		- a caption that says "Bus Schedule" <br/>
+		- one header row with three cells <br/>
+		- four rows with three cells </b>
+
+	<pre>
+		table>caption{Bus Schedule}+(tr>td*3)*4(header>nav.menu-main>ul>(li>a[href="#"]{link$$})*12)+((div.clearfix.row.row$>(article>h1>lorem3^h2>lorem2^p>lorem17)*3)*4)+(table>caption{Bus Schedule}+(tr>td*3)*4)
+	</pre>
+
+	<hr/>
+
+	<pre>
+		(header>h1+nav>ul>(li>a[href="#"]>lorem1)*6)
+	</pre>
+
+	<hr/>
+
+	<pre>
+		(h3{New This}^div.story>img[src="http://lorempixel.com/300/200"]+h4>lorem2^p>lorem15^.credit)*6
+	</pre>
+
+</body>
+</html>
