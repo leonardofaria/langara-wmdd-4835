@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+}
+
+.container {
+	background: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+}
+
+header, footer {
+	background: #000;
+	color: #fff;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+
+	section {
+		flex-direction: column-reverse;
+	}
+
+}
