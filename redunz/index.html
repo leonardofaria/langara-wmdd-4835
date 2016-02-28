@@ -1,0 +1,172 @@
+<html>
+<head>
+	<title>Redunzl</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="promo_box">
+	<h3>Redunzl</h3>
+
+	<p>You do could win 100,000 free Aeroplan points.</p>
+
+	<p>Describe the most interesting trip you could take with 100,000 free Aeroplan points</p>
+
+	<p>We will pick the most interesting - on March 17.</p>
+
+	<p><strong>500 words maximum, please</strong></p>
+
+	<form>
+		<div class="field">
+			<label for="name"><span class="fa fa-user"></span></label>
+			<input type="text" id="name" placeholder="your name" />
+		</div>
+
+		<div class="field">
+			<label for="email"><span class="fa fa-envelope"></span></label>
+			<input type="text" id="email" placeholder="your email" />
+		</div>
+
+		<div class="field">
+			<label for="name"><span class="fa fa-plane"></span></label>
+			<textarea placeholder="where would you go?"></textarea>
+		</div>
+
+		<div class="field">
+			<button class="submit_btn"><span class="fa fa-briefcase"></span> Submit</button>
+			<button class="close_btn"><span class="fa fa-times"></span> Close</button>
+		</div>
+
+		<div class="alert">Thanks for entering the contest.</div>
+	</form>
+</div>
+
+<div class="container">
+	<header>
+		<div class="promo">
+			WIN 100,000 AeroPlan Points
+		</div>
+
+		<h1>Redunzl</h1>
+
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Music</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Tour Dates</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Search</a></li>
+				<li><a href="#">Store</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<figure>
+		<img src="images/bug.jpg" />
+		<figcaption>
+			<div class="description">
+				Gregor Samsa in America
+			</div>
+
+			<!-- EMMET: ul.pagination>(li>{$})*10 -->
+			<ul class="pagination">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>9</li>
+				<li>10</li>
+			</ul>
+		</figcaption>
+	</figure>
+
+	<!-- EMMET: .gallery>(.item>h2>Lorem2^img[images/]+p>Lorem6)*11 -->
+	<div class="gallery">
+		<div class="item">
+			<h2>Lorem ipsum.</h2>
+			<img src="images/parkade.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur.</p>
+		</div>
+		<div class="item">
+			<h2>Cupiditate, in.</h2>
+			<img src="images/dj.jpg">
+			<p>Ad maiores, dolores vitae quam repellendus.</p>
+		</div>
+		<div class="item">
+			<h2>Doloremque, nemo?</h2>
+			<img src="images/gears.jpg">
+			<p>Voluptate ipsam animi, quae dolores voluptates.</p>
+		</div>
+		<div class="item">
+			<h2>Tempore, ullam.</h2>
+			<img src="images/subway.jpg">
+			<p>Eos ad perspiciatis provident repellendus possimus.</p>
+		</div>
+		<div class="item">
+			<h2>Sequi, sint.</h2>
+			<img src="images/headphones.jpg">
+			<p>Libero nostrum repellat quas nemo aut!</p>
+		</div>
+		<div class="item">
+			<h2>Eos, iusto!</h2>
+			<img src="images/stationwagon.jpg">
+			<p>Vitae odit molestias voluptates quo inventore.</p>
+		</div>
+		<div class="item">
+			<h2>Voluptatem, quod.</h2>
+			<img src="images/record.jpg">
+			<p>Eveniet sunt sequi quo tenetur, facere.</p>
+		</div>
+		<div class="item">
+			<h2>Assumenda, iure.</h2>
+			<img src="images/clock.jpg">
+			<p>Maxime cum iure numquam maiores reiciendis.</p>
+		</div>
+		<div class="item">
+			<h2>Eius, in.</h2>
+			<img src="images/city.jpg">
+			<p>Sed eligendi ab eaque neque voluptatibus?</p>
+		</div>
+		<div class="item">
+			<h2>Error, eveniet.</h2>
+			<img src="images/hall.jpg">
+			<p>Soluta illum totam vero distinctio qui!</p>
+		</div>
+		<div class="item">
+			<h2>Dicta, fugit!</h2>
+			<img src="images/archway.jpg">
+			<p>Odit ipsum sint illo sit blanditiis.</p>
+		</div>
+	</div>
+
+</div><!-- // container -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function() {
+
+	$('.promo').on('click', function(){
+		$('.promo_box').slideDown();
+	});
+
+	$('.close_btn').on('click', function(){
+		$('.promo_box').slideUp();
+	});
+
+	$('.submit_btn').on('click', function(e){
+		e.preventDefault();
+		$('.alert').slideDown();
+	});
+
+});
+
+</script>
+</body>
+</html>
