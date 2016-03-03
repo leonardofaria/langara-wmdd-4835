@@ -8,6 +8,7 @@ This repository stores some of my exercises of [WMDD 4835 - HTML/CSS 2](http://w
 * [SVG data CSS exercise](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/svg-data-css/index.html) - based on [this exercise](http://wrmf.ca/posts/exercise-svg-data-css/)
 * Flexbox: simple [example 1](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/flexbox/example1.html) and [example 2](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/flexbox/example2.html)
 * [redunz](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/redunz/index.html): based on [this exercise](http://wrmf.ca/posts/redunzl-animation-flexbox-backgrounds/) and these vídeos: [1](https://www.youtube.com/watch?v=WJHUCBsT6Bo) and [2](https://www.youtube.com/watch?v=_SJAGIGEjAI)
+* [Midterm](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/midterm/index.html) - based on [this post](http://wrmf.ca/posts/midterm-wordpress-mockup-exercise/)
 
 ## Snippets
 
