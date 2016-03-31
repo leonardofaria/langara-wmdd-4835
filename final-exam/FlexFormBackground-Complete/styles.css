@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,400italic,900italic);
+
+/*
+In this answer file, I have been overspecific with some of the selectors.
+For example, if I have only one SUBMIT button, I really don't need to use 
+a descendent selector to style it. And since my only lists are used as menus,
+I really don't need to specify the header or footer parent elements.
+
+This reflects earlier states of the development. But I decided to keep the
+original code because since some parent elements needed to be styled as
+flex operations, I thought the additional specificity might make the
+logic of the layout more easily understandable while you read the code.
+
+As well, I hide the form with opacity, but I would likely move it off stage
+as well, or set it to display: none, etc.
+
+*/
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    font-weight: 400;
+}
+
+header,
+footer {
+    flex: 1 0 auto;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+}
+
+
+header ul,
+footer ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+header li,
+footer li {
+    border-left: 1px solid white;
+    padding: 0 10px;
+}
+
+header li:first-of-type,
+footer li:first-of-type {
+    border-left: none;
+}
+
+header a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+main {
+    flex: 8 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(beefheart.jpg);
+    background-size: contain;
+}
+
+
+
+.form-wrapper-outer h1 {
+    font-size: 90px;
+    color: white;
+    margin-bottom: .5rem;
+    font-family: lato;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.form-wrapper-outer {
+    width: 60%;
+    margin: auto;
+    transition: opacity 1s;
+}
+
+.form-wrapper-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5%;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 5px;
+}
+
+.form-wrapper-inner label {
+    flex: 1 0 60px;
+    text-align: right;
+    padding: 15px;
+    color: white;
+}
+
+.form-wrapper-inner input,
+.form-wrapper-inner textarea {
+    flex: 9 0 auto;
+    margin-left: 0;
+    padding: 5px;
+    font-size: 24px;
+}
+
+
+.form-wrapper-inner textarea {
+    height: 150px;
+    border: none;
+}
+
+.wrapper-submit {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.wrapper-submit input[type="submit"] {
+    width: 100%;
+    font-size: 50px !important;
+    font-family: Lato;
+    font-weight: 900;
+    font-style: italic;
+    border: 10px solid rgba(0, 0, 0, .8);
+    transition: background-color 1s;
+}
+
+.wrapper-submit input[type="submit"]:hover {
+    background-color: salmon;
+}
+
+
+/* FOR JS class toggling to fade in form element. */
+.hidden {
+    opacity: 0;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .wrapper-submit input[type="submit"] {
+        font-size: 20px !important;
+    }
+    .form-wrapper-outer {
+        width: 85%;
+    }
+    .form-wrapper-inner {
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .form-wrapper-inner label {
+        flex: 0 0 0;
+        padding: 5px;
+    }
+    .form-wrapper-inner input,
+    .form-wrapper-inner textarea {
+        width: 90%;
+    }
+}

@@ -10,6 +10,7 @@ This repository stores some of my exercises of [WMDD 4835 - HTML/CSS 2](http://w
 * [redunz](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/redunz/index.html): based on [this exercise](http://wrmf.ca/posts/redunzl-animation-flexbox-backgrounds/) and these vídeos: [1](https://www.youtube.com/watch?v=WJHUCBsT6Bo) and [2](https://www.youtube.com/watch?v=_SJAGIGEjAI)
 * [Shakespeare](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/shakespeare/index.html) - based on [this post](http://wrmf.ca/posts/javascript-shakespeare-exercise/)
 * [Midterm](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/midterm/index.html) - based on [this post](http://wrmf.ca/posts/midterm-wordpress-mockup-exercise/)
+* [Final exam](https://rawgit.com/leonardofaria/langara-wmdd-4835/master/final-exam/index.html) - based on [this post](http://wrmf.ca/posts/wmdd4835-final-exam/)
 
 ## Snippets
 

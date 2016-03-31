@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background: url('images/beefheart.jpg') repeat;
+	font-family: 'Lucida Grande';
+  margin: 0;
+}
+
+.wrap {
+	display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+	background: #000;
+	padding: 10px 40px;
+	width: 100%;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+nav ul li {
+	border-left: 1px solid #fff;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li:first-of-type {
+	border-left: 0;
+}
+
+nav ul li a {
+	color: #fff;
+	display: block;
+	padding: 0 5px 0 10px;
+	text-decoration: none;
+}
+
+#contact {
+	width: 95%;
+}
+
+@media (min-width: 600px) {
+	#contact {
+		width: 60%;
+	}
+}
+
+#contact form {
+	display: none;
+}
+
+#contact h2 {
+	color: #fff;
+	font-size: 2rem;
+	font-style: italic;
+	margin: 20px 0;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	#contact h2 {
+		font-size: 3.5rem;
+		text-align: left;
+	}
+}
+
+#contact .field {
+	background: rgba(0, 0, 0, 0.75);
+	color: #fff;
+	display: flex;
+	margin-bottom: 10px;
+	padding: 10px;
+	flex-direction: column;
+}
+
+@media (min-width: 600px) {
+	#contact .field {
+		flex-direction: row;
+	}
+}
+
+#contact .field label {
+	align-self: center;
+	margin: 0 0 10px 0;
+	flex-basis: 100%;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	#contact .field label {
+		flex-basis: 140px;
+		font-size: 0.8rem;
+		margin: 0 10px 0 0;
+		text-align: right;
+	}
+}
+
+#contact .field input,
+#contact .field textarea {
+	flex-grow: 1;
+	font-size: 1rem;
+}
+
+#contact .field textarea {
+	height: 100px;
+}
+
+
+#contact input[type=submit] {
+	background: #C0c0c0;
+	border: 5px solid #262626;
+	font-family: 'Lucida Grande';
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+	transition: all 0.5s;
+}
+
+#contact input[type=submit]:hover {
+	background: #FE7E6F;
+	border-color: #321A17;
+}
